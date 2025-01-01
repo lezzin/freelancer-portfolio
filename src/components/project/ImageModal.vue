@@ -20,9 +20,11 @@ const emit = defineEmits(["close"]);
         role="dialog" aria-modal="true">
         <div class="bg-white rounded-lg p-6 mx-3 md:mx-0 relative max-h-[90vh] overflow-y-auto">
             <button
-                class="fixed top-4 right-4 text-gray-600 bg-white hover:text-gray-900 hover:bg-gray-200 border rounded-md p-1"
-                @click="emit('close')" aria-label="Close modal">
-                <XMarkIcon class="size-5" />
+                class="fixed top-5 right-5 text-gray-600 bg-white hover:text-gray-900 hover:bg-gray-200 border rounded-md p-1"
+                @click="emit('close')"
+                aria-label="Fechar Modal"
+            >
+                <XMarkIcon class="size-6" />
             </button>
 
             <div class="mt-4">

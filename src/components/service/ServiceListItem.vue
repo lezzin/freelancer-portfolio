@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-white p-4 shadow-lg rounded-md transition-all hover:shadow-xl hover:scale-[1.05] group-hover">
+    <div class="bg-white p-4 rounded-md group-hover h-full text-left border border-gray-200">
         <div class="pl-16 relative">
             <h3 class="text-base/7 font-semibold text-gray-900 flex items-center">
                 <div
@@ -16,7 +16,7 @@ const props = defineProps({
                     <component :is="service.icon" class="size-6 text-white" aria-hidden="true" />
                 </div>
 
-                <span>{{ service.name }}</span>
+                <p>{{ service.name }}</p>
             </h3>
             <p class="mt-2 text-base/7 text-gray-600">{{ service.description }}</p>
         </div>

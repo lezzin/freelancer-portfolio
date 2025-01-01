@@ -11,7 +11,7 @@ export default [
     },
     {
         name: 'Projetos',
-        target: '#skills',
+        target: '#projects',
         type: 'internal',
     },
     {

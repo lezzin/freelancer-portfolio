@@ -6,6 +6,10 @@ const props = defineProps({
     variant: {
         type: String,
         default: 'small'
+    },
+    coloring: {
+        type: String,
+        default: 'bg-teal-600 ring-teal-900'
     }
 });
 
@@ -16,8 +20,8 @@ const logoSizes = {
 </script>
 
 <template>
-    <router-link to="/">
-        <LazyImage url="/img/logo.svg" alt="Logo do projeto" :class="`${logoSizes[variant]} aspect-square`" />
+    <router-link to="/" :class="`${logoSizes[variant]} ring-1 ${coloring} aspect-square rounded-full`">
+        <LazyImage url="logo.svg" alt="Logo do projeto"/>
         <span class="sr-only">Flashcards</span>
     </router-link>
 </template>

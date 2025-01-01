@@ -26,7 +26,7 @@ const projects = [
             { src: "task-3.png", label: "Página da tarefa selecionada com menu aberto" },
             { src: "task-4.png", label: "Página da visualização geral das tarefas" },
             { src: "task-5.png", label: "Página do Kanban" },
-            { src: "task-6.png", label: "Página da funcionalidade de AI" }
+            { src: "task-6.png", label: "Página da funcionalidade de IA" }
         ],
         "name": "TaskFlow",
         "description": "Aplicação para gestão de tarefas, com visualização Kanban, sugestões por IA e categorização de projetos.",
@@ -45,7 +45,7 @@ const projects = [
             { src: "ferramentas-dev-2.png", label: "Página inicial (dark)" },
             { src: "ferramentas-dev-3.png", label: "Página da categoria selecionada (light - usuário)" },
             { src: "ferramentas-dev-4.png", label: "Página da categoria selecionada (dark - usuário)" },
-            { src: "ferramentas-dev-5.png", label: "Página da categoria selecionada (dark - admin)" }
+            { src: "ferramentas-dev-5.png", label: "Página da categoria selecionada (light - admin)" }
         ],
         "name": "Ferramentas para Devs",
         "description": "Plataforma para acessar recursos gratuitos essenciais para desenvolvedores.",

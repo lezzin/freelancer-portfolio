@@ -1,7 +1,6 @@
 <script setup>
-import { PlusIcon } from '@heroicons/vue/24/solid';
+import { PlusIcon, EyeIcon } from '@heroicons/vue/24/solid';
 import { imageUrl } from '../../utils/urlUtils';
-import { EyeIcon } from '@heroicons/vue/24/solid';
 
 const props = defineProps({
     project: {
@@ -25,15 +24,15 @@ const emit = defineEmits(["openModal"]);
         <div class="mt-4">
             <img :src="imageUrl(project.image, 'projects')" :alt="project.name" class="w-full h-auto rounded-md" />
 
-            <div class="flex items-center flex-wrap justify-between gap-2 mt-4">
+            <div class="flex items-center flex-wrap justify-between gap-2 mt-4 overflow-hidden">
                 <a :href="project.deployUrl" target="_blank"
-                    class="flex items-center gap-2 bg-green-500 py-1 px-2 rounded text-white hover:bg-green-700"
-                    aria-label="Visitar o Projeto">
-                    <EyeIcon class="size-4" />
-                    Visitar o Projeto
+                    class="flex items-center justify-center gap-2 rounded bg-teal-800 px-2 py-1 text-base font-semibold text-gray-100 shadow-sm hover:bg-teal-700 focus-button focus-visible:outline-teal-800"
+                    data-aos="fade-right" data-aos-delay="400">
+                    <PlusIcon class="w-5 h-5" />
+                    Visualizar Projeto
                 </a>
 
-                <button class="flex items-center gap-2 py-1 px-2 rounded text-green-500 hover:text-green-700"
+                <button class="flex items-center gap-2 px-2 py-1 rounded text-teal-800 hover:text-teal-700 border border-teal-800 focus-button focus-visible:outline-teal-800"
                     @click="emit('openModal', project)" aria-label="Ver mais sobre {{ project.name }}">
                     <span>Ver mais</span>
                     <PlusIcon class="size-4" />

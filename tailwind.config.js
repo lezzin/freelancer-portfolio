@@ -5,8 +5,11 @@ export default {
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'square-pattern': "url('/img/square-pattern.svg')",
+            },
+        },
         plugins: [],
     }
 }
-

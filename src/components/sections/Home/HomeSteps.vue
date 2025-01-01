@@ -13,6 +13,9 @@ const header = {
 <template>
     <PageSection>
         <SectionHeader :section-title="header.title" :section-description="header.description" />
-        <StepItem :steps="steps" />
+
+        <div class="mx-auto mt-16 max-w-4xl lg:max-w-7xl">
+            <StepItem :steps="steps" />
+        </div>
     </PageSection>
 </template>

@@ -1,7 +1,14 @@
 <script setup>
-import { reactive, computed } from 'vue';
+import { reactive, computed, ref, onMounted } from 'vue';
+import emailjs from "@emailjs/browser";
+
+import 'vue3-toastify/dist/index.css';
+import { toast } from 'vue3-toastify';
+
 import SectionHeader from '../components/shared/SectionHeader.vue';
 import PageSection from '../components/layout/PageSection.vue';
+
+const isSending = ref(false);
 
 const fields = reactive({
     name: '',
@@ -52,17 +59,55 @@ const validateMessage = () => {
     errors.message = '';
 };
 
-const isFormInvalid = computed(() => (!fields.name || !fields.email || !fields.message || errors.name || errors.email || errors.message));
+const isFormInvalid = computed(() => {
+    return fields.name && fields.email && fields.message && !!errors.name && !!errors.email && !!errors.message;
+});
 
 const handleSubmit = () => {
     if (isFormInvalid.value) return;
-    alert('Formulário enviado com sucesso!');
+   
+    const params = {
+        from_email: fields.email,
+        from_name: fields.name,
+        message: fields.message,
+    };
+
+    isSending.value = true;
+
+    emailjs.send('service_svh7f4w', 'template_12gipiu', params)
+        .then(handleResponse)
+        .catch(handleError)
+        .finally(() => (isSending.value = false));
+};
+
+const handleResponse = () => {
+    toast.success("Mensagem enviada com sucesso!", {
+        duration: 5000,
+        position: 'top-right',
+    });
+
+    fields.name = '';
+    fields.email = '';
+    fields.message = '';
+};
+
+const handleError = (e) => {
+    toast.error("Erro ao enviar mensagem. Tente novamente mais tarde.", {
+        duration: 5000,
+        position: 'top-right',
+    });
 };
 
 const header = {
     title: "Entre em contato",
     description: "Tem alguma dúvida ou sugestão? Envie sua mensagem para nós!"
-}
+};
+
+onMounted(() => {
+    emailjs.init({
+        publicKey: "iwzLyfgc_NAdfVZiN",
+    });
+});
 </script>
 
 <template>
@@ -98,7 +143,7 @@ const header = {
 
             <button type="submit" :disabled="isFormInvalid"
                 class="mt-10 block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-button focus-visible:outline-green-600">
-                Enviar Mensagem
+                {{ isSending ? 'Enviando...' : '🚀 Enviar mensagem' }}
             </button>
         </form>
     </PageSection>

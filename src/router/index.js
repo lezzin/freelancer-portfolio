@@ -6,12 +6,12 @@ const router = createRouter({
         {
             path: '/',
             component: () => import('../views/HomeView.vue'),
-            meta: { showHeader: false },
+            meta: { canToggleHeaderBackground: false },
         },
         {
             path: '/contact',
             component: () => import('../views/ContactView.vue'),
-            meta: { showHeader: true },
+            meta: { canToggleHeaderBackground: true },
         },
     ],
     scrollBehavior(to, from, savedPosition) {

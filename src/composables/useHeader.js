@@ -6,25 +6,25 @@ export function useHeader() {
 
     const hasHeaderBackground = ref(false);
     const isMenuOpen = ref(false);
-    const showHeader = ref(route.meta.showHeader);
+    const canToggleHeaderBackground = ref(route.meta.canToggleHeaderBackground);
 
     function updateHeaderBackground() {
         const triggerPoint = window.innerHeight - 100;
-        hasHeaderBackground.value = showHeader.value || window.scrollY > triggerPoint;
+        hasHeaderBackground.value = canToggleHeaderBackground.value || window.scrollY > triggerPoint;
     }
 
     function toggleMenu() {
         isMenuOpen.value = !isMenuOpen.value;
     }
 
-    watch(() => route.meta.showHeader, newValue => {
-        showHeader.value = newValue;
+    watch(() => route.meta.canToggleHeaderBackground, newValue => {
+        canToggleHeaderBackground.value = newValue;
         updateHeaderBackground();
     });
 
     onMounted(() => {
         updateHeaderBackground();
-        if (!showHeader.value) {
+        if (!canToggleHeaderBackground.value) {
             window.addEventListener('scroll', updateHeaderBackground);
         }
     });
@@ -37,6 +37,6 @@ export function useHeader() {
         hasHeaderBackground,
         isMenuOpen,
         toggleMenu,
-        showHeader,
+        canToggleHeaderBackground,
     };
 }

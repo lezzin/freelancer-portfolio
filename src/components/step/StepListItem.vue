@@ -3,17 +3,28 @@ const props = defineProps({
     step: {
         type: Object,
         required: true
+    },
+    hasLine: {
+        type: Boolean,
+        default: true
     }
-})
+});
 </script>
 
 <template>
-    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-        <div class="flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full mb-4">
-            <span class="text-lg font-bold">{{ step.step }}</span>
-        </div>
+    <li class="relative flex-1">
+        <div class="flex items-start justify-start font-medium w-full gap-4">
+            <span class="w-8 h-8 aspect-square border-2 bg-yellow-300 rounded-full flex justify-center items-center text-sm text-teal-800 bg-gray-50 border-yellow-500 border-solid">
+                {{ step.step }}
+            </span>
 
-        <h3 class="text-xl font-semibold mb-2">{{ step.title }}</h3>
-        <p class="text-gray-600">{{ step.description }}</p>
-    </div>
+            <div class="block">
+                <h3 class="text-lg font-semibold text-teal-800">
+                    {{ step.title }}
+                </h3>
+
+                <p class="text-sm text-gray-600">{{ step.description }}</p>
+            </div>
+        </div>
+    </li>
 </template>

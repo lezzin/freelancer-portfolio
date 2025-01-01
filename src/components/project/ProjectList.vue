@@ -16,24 +16,36 @@ const selectedDetail = ref(null);
 const showImageModal = ref(false);
 const selectedImage = ref(null);
 
+const addBodyOverflow = () => {
+    document.body.classList.add('overflow-hidden');
+};
+
+const removeBodyOverflow = () => {
+    document.body.classList.remove('overflow-hidden');
+}
+
 const openModal = (detail) => {
     selectedDetail.value = detail;
     showDetailsModal.value = true;
+    addBodyOverflow();
 };
 
 const closeDetailsModal = () => {
     showDetailsModal.value = false;
     selectedDetail.value = null;
+    removeBodyOverflow();
 };
 
 const openImageModal = (image) => {
     selectedImage.value = image;
     showImageModal.value = true;
+    addBodyOverflow();
 };
 
 const closeImageModal = () => {
     showImageModal.value = false;
     selectedImage.value = null;
+    removeBodyOverflow();
 };
 </script>
 
