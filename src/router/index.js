@@ -9,18 +9,8 @@ const router = createRouter({
             meta: { showHeader: false },
         },
         {
-            path: '/kits',
-            component: () => import('../views/KitView.vue'),
-            meta: { showHeader: true },
-        },
-        {
             path: '/contact',
             component: () => import('../views/ContactView.vue'),
-            meta: { showHeader: true },
-        },
-        {
-            path: '/team/:id',
-            component: () => import('../views/PersonView.vue'),
             meta: { showHeader: true },
         },
     ],
