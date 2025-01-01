@@ -37,18 +37,20 @@ const next = () => carouselRef.value.next();
 const prev = () => carouselRef.value.prev();
 </script>
 <template>
-    <Carousel v-bind="config" ref="carouselRef" v-model="currentSlide">
-        <Slide v-for="(service, index) in services" key="slide" class="carousel__item">
-            <ServiceListItem :service="service" :key="index"/>
-        </Slide>
-    </Carousel>
+    <div data-aos="fade-up">
+        <Carousel v-bind="config" ref="carouselRef" v-model="currentSlide">
+            <Slide v-for="(service, index) in services" key="slide" class="carousel__item">
+                <ServiceListItem :service="service" :key="index"/>
+            </Slide>
+        </Carousel>
+    </div>
 
     <div class="pl-4 mt-8 flex gap-2">
-        <button type="button" class="w-12 aspect-square border border-red-600 text-red-600 bg-red-100 hover:bg-red-200 rounded-full grid place-items-center" @click="prev">
+        <button type="button" class="w-12 aspect-square border border-red-600 text-red-600 bg-red-100 hover:bg-red-200 rounded-full grid place-items-center" @click="prev" data-aos="fade-left">
             <ChevronLeftIcon class="size-5"/> 
         </button>
 
-        <button type="button" class="w-12 aspect-square border border-red-600 text-red-600 bg-red-100 hover:bg-red-200 rounded-full grid place-items-center" @click="next">
+        <button type="button" class="w-12 aspect-square border border-red-600 text-red-600 bg-red-100 hover:bg-red-200 rounded-full grid place-items-center" @click="next" data-aos="fade-right">
             <ChevronRightIcon class="size-5"/> 
         </button>
     </div>
