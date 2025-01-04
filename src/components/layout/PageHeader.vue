@@ -1,22 +1,21 @@
 <script setup>
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid';
-import { useHeader } from '../../composables/useHeader';
+import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/solid";
+import { useHeader } from "../../composables/useHeader";
 
-import AppLogo from '../shared/AppLogo.vue';
-import AppLinks from '../shared/AppLinks.vue';
-import PageContainer from './PageContainer.vue';
+import AppLogo from "../shared/AppLogo.vue";
+import AppLinks from "../shared/AppLinks.vue";
+import PageContainer from "./PageContainer.vue";
 
 const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
 </script>
 
 <template>
-    <header class="sticky top-0 z-10 ring-1 transition-all duration-500"
-        :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-teal-900 bg-teal-800'">
+    <header class="sticky top-0 z-10 ring-1 transition-all duration-500" :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-teal-900 bg-teal-800'">
         <PageContainer class="flex items-center justify-between h-[10vh]" aria-label="Global">
             <AppLogo />
 
             <div class="hidden lg:flex lg:gap-x-3">
-                <AppLinks :linkClass="`text-base font-semibold ${hasHeaderBackground ? 'text-gray-900 hover:text-gray-700' : 'text-gray-100 hover:text-white'}`"/>
+                <AppLinks :linkClass="`text-base font-semibold ${hasHeaderBackground ? 'text-gray-900 hover:text-gray-700' : 'text-gray-100 hover:text-white'}`" />
             </div>
 
             <button type="button" @click="toggleMenu" class="flex lg:hidden">
@@ -27,14 +26,11 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
     </header>
 
     <transition name="menu">
-        <div v-if="isMenuOpen"
-            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden"
-            role="dialog" aria-modal="true">
+        <div v-if="isMenuOpen" class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden" role="dialog" aria-modal="true">
             <div class="flex items-center justify-between">
                 <AppLogo />
 
-                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-red-600"
-                    @click="toggleMenu">
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-red-600" @click="toggleMenu">
                     <span class="sr-only">Close menu</span>
                     <XMarkIcon class="size-8" />
                 </button>

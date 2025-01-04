@@ -1,5 +1,5 @@
 <script setup>
-import links from '../../mock/links';
+import links from "../../mock/links";
 
 const props = defineProps({
     linkClass: {
@@ -11,12 +11,12 @@ const props = defineProps({
 const emit = defineEmits(["linkClick"]);
 
 function defineTo({ target }) {
-    const isAnchor = target.includes('#');
+    const isAnchor = target.includes("#");
 
     return {
-        path: isAnchor ? target.split('#')[0] : target,
-        hash: isAnchor ? `#${target.split('#')[1]}` : ''
-    }
+        path: isAnchor ? target.split("#")[0] : target,
+        hash: isAnchor ? `#${target.split("#")[1]}` : "",
+    };
 }
 </script>
 

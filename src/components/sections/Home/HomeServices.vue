@@ -1,13 +1,13 @@
 <script setup>
-import ServiceList from '../../service/ServiceList.vue';
-import PageSection from '../../layout/PageSection.vue';
-import SectionHeader from '../../shared/SectionHeader.vue';
-import services from '../../../mock/services';
+import ServiceList from "../../service/ServiceList.vue";
+import PageSection from "../../layout/PageSection.vue";
+import SectionHeader from "../../shared/SectionHeader.vue";
+import services from "../../../mock/services";
 
 const header = {
     title: "Soluções Personalizadas para o Seu Negócio",
-    description: "Ofereço uma variedade de serviços para atender às necessidades específicas do seu negócio."
-}
+    description: "Ofereço uma variedade de serviços para atender às necessidades específicas do seu negócio.",
+};
 </script>
 
 <template>

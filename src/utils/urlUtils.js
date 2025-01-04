@@ -1,6 +1,6 @@
-const getImageName = (image) => (String(image).toLowerCase());
+const getImageName = (image) => String(image).toLowerCase();
 
-const IMAGE_PATH = '/img';
+const IMAGE_PATH = "/img";
 
 export const imageUrl = (image, path = null) => {
     if (path) {
@@ -8,4 +8,4 @@ export const imageUrl = (image, path = null) => {
     }
 
     return `${IMAGE_PATH}/${getImageName(image)}`;
-}
+};

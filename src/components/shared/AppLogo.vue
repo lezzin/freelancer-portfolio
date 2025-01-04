@@ -1,27 +1,27 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import LazyImage from './LazyImage.vue';
+import { RouterLink } from "vue-router";
+import LazyImage from "./LazyImage.vue";
 
 const props = defineProps({
     variant: {
         type: String,
-        default: 'small'
+        default: "small",
     },
     coloring: {
         type: String,
-        default: 'bg-teal-600 ring-teal-900'
-    }
+        default: "bg-teal-600 ring-teal-900",
+    },
 });
 
 const logoSizes = {
-    'small': 'w-12 h-12',
-    'normal': 'w-32 h-32',
-}
+    small: "w-12 h-12",
+    normal: "w-32 h-32",
+};
 </script>
 
 <template>
     <router-link to="/" :class="`${logoSizes[variant]} ring-1 ${coloring} aspect-square rounded-full`">
-        <LazyImage url="logo.svg" alt="Logo do projeto"/>
+        <LazyImage url="logo.svg" alt="Logo do projeto" />
         <span class="sr-only">Flashcards</span>
     </router-link>
 </template>

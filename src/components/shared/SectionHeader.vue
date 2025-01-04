@@ -2,22 +2,21 @@
 const props = defineProps({
     sectionTitle: {
         type: String,
-        required: true
+        required: true,
     },
     sectionDescription: {
         type: String,
-        required: false
+        required: false,
     },
     sectionAlign: {
         type: String,
-        default: 'center'
-    }
-})
+        default: "center",
+    },
+});
 </script>
 
 <template>
-    <div :class="sectionAlign === 'center' ? 'mx-auto md:text-center' : 'md:text-center lg:text-left'"
-        class="lg:max-w-2xl" v-if="sectionDescription">
+    <div :class="sectionAlign === 'center' ? 'mx-auto md:text-center' : 'md:text-center lg:text-left'" class="lg:max-w-2xl" v-if="sectionDescription">
         <h2 class="section-title" data-aos="fade-left">
             {{ sectionTitle }}
         </h2>
@@ -26,5 +25,5 @@ const props = defineProps({
             {{ sectionDescription }}
         </p>
     </div>
-    <h2 class="md:text-center section-title" data-aos="fade-left" v-else> {{ sectionTitle }} </h2>
+    <h2 class="md:text-center section-title" data-aos="fade-left" v-else>{{ sectionTitle }}</h2>
 </template>

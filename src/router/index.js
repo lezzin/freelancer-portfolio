@@ -1,16 +1,16 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
-            component: () => import('../views/HomeView.vue'),
+            path: "/",
+            component: () => import("../views/HomeView.vue"),
             meta: { canToggleHeaderBackground: false },
         },
         {
-            path: '/contact',
-            component: () => import('../views/ContactView.vue'),
+            path: "/contact",
+            component: () => import("../views/ContactView.vue"),
             meta: { canToggleHeaderBackground: true },
         },
     ],
@@ -21,7 +21,7 @@ const router = createRouter({
             if (element) {
                 const headerHeight = window.innerHeight * 0.1;
                 const position = element.offsetTop - headerHeight;
-                return { top: position, behavior: 'smooth' };
+                return { top: position, behavior: "smooth" };
             }
         }
 

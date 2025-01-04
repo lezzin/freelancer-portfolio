@@ -2,12 +2,12 @@
 const props = defineProps({
     step: {
         type: Object,
-        required: true
+        required: true,
     },
     hasLine: {
         type: Boolean,
-        default: true
-    }
+        default: true,
+    },
 });
 </script>
 

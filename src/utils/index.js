@@ -1,4 +1,4 @@
-import { KIT_TYPES } from '../constants';
+import { KIT_TYPES } from "../constants";
 
 export function sortKitsByFeatured(kitsArray) {
     return [...kitsArray].sort((k1, k2) => {

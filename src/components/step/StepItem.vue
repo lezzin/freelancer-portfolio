@@ -1,6 +1,6 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
-import StepListItem from './StepListItem.vue';
+import { onMounted, onUnmounted, ref } from "vue";
+import StepListItem from "./StepListItem.vue";
 
 const props = defineProps({
     steps: {
@@ -13,7 +13,7 @@ const showLine = ref(false);
 const line = ref(null);
 
 function handleScroll() {
-    const el = document.querySelector('.line');
+    const el = document.querySelector(".line");
     const top = el.getBoundingClientRect().top;
 
     showLine.value = top < window.innerHeight - 200;
@@ -21,11 +21,11 @@ function handleScroll() {
 
 onMounted(() => {
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 });
 
 onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll);
+    window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
@@ -33,14 +33,7 @@ onUnmounted(() => {
     <ol class="space-y-8 mx-auto max-w-2xl relative">
         <div v-show="showLine" class="absolute w-[.1rem] md:w-0.5 bg-yellow-600 inline-block absolute top-5 left-4 line"></div>
 
-        <StepListItem 
-            v-for="(step, index) in steps" 
-            :key="index" 
-            :step="step"
-            :hasLine="index !== steps.length - 1"
-            data-aos="fade-down"
-            :data-aos-delay="index * 100"
-        />
+        <StepListItem v-for="(step, index) in steps" :key="index" :step="step" :hasLine="index !== steps.length - 1" data-aos="fade-down" :data-aos-delay="index * 100" />
     </ol>
 </template>
 <style scoped>

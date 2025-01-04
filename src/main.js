@@ -1,20 +1,20 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import './assets/style.css'
+import "./assets/style.css";
 
-import App from './App.vue'
-import router from './router'
+import App from "./App.vue";
+import router from "./router";
 
 const app = createApp(App);
 
 AOS.init({
-    easing: 'ease-out-back',
+    easing: "ease-out-back",
     duration: 1000,
-    offset: 50
+    offset: 50,
 });
 
-app.use(router)
-app.mount('#app')
+app.use(router);
+app.mount("#app");

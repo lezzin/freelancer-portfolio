@@ -1,5 +1,5 @@
-import { ref, onMounted, onBeforeUnmount, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted, onBeforeUnmount, watch } from "vue";
+import { useRoute } from "vue-router";
 
 export function useHeader() {
     const route = useRoute();
@@ -17,20 +17,23 @@ export function useHeader() {
         isMenuOpen.value = !isMenuOpen.value;
     }
 
-    watch(() => route.meta.canToggleHeaderBackground, newValue => {
-        canToggleHeaderBackground.value = newValue;
-        updateHeaderBackground();
-    });
+    watch(
+        () => route.meta.canToggleHeaderBackground,
+        (newValue) => {
+            canToggleHeaderBackground.value = newValue;
+            updateHeaderBackground();
+        }
+    );
 
     onMounted(() => {
         updateHeaderBackground();
         if (!canToggleHeaderBackground.value) {
-            window.addEventListener('scroll', updateHeaderBackground);
+            window.addEventListener("scroll", updateHeaderBackground);
         }
     });
 
     onBeforeUnmount(() => {
-        window.removeEventListener('scroll', updateHeaderBackground);
+        window.removeEventListener("scroll", updateHeaderBackground);
     });
 
     return {
