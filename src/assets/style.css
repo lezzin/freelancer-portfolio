@@ -4,22 +4,22 @@
 
 @layer utilities {
     .section-title {
-        @apply text-pretty font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl lg:text-balance
+        @apply text-pretty font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl lg:text-balance;
     }
 
     .section-subtitle {
-        @apply mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8
+        @apply mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8;
     }
 
     .focus-button {
-        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
     }
 
     .focus-input {
-        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
     }
 
     .badge {
-        @apply inline-flex items-center rounded-md px-3 py-1 text-xs font-semibold
+        @apply inline-flex items-center rounded-md px-3 py-1 text-xs font-semibold;
     }
 }

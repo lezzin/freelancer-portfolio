@@ -5,8 +5,8 @@ import SectionHeader from "../../shared/SectionHeader.vue";
 import services from "../../../mock/services";
 
 const header = {
-    title: "Soluções Personalizadas para o Seu Negócio",
-    description: "Ofereço uma variedade de serviços para atender às necessidades específicas do seu negócio.",
+    title: "Soluções Personalizadas para Impulsionar o Seu Negócio",
+    description: "Transforme suas ideias em realidade com serviços sob medida que atendem às necessidades exclusivas da sua empresa.",
 };
 </script>
 

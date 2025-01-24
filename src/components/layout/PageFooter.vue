@@ -17,7 +17,8 @@ import AppLogo from "../shared/AppLogo.vue";
 
         <div class="bg-teal-900 py-3">
             <p class="text-sm text-center text-gray-300">
-                © {{ new Date().getFullYear() }} <a href="https://lezzin.github.io" class="hover:text-gray-300" target="_blank">Lezzin</a>. Todos os direitos reservados.
+                © {{ new Date().getFullYear() }} <a href="https://lezzin.github.io" class="hover:text-gray-300" target="_blank">Lezzin</a>. Todos os
+                direitos reservados.
             </p>
         </div>
     </footer>

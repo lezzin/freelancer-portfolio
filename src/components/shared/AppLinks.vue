@@ -21,7 +21,7 @@ function defineTo({ target }) {
 </script>
 
 <template>
-    <div v-for="(link, index) in links" :key="index" @click="emit('linkClick')">
+    <div v-for="(link, index) in links" :key="`link-${index}`" @click="emit('linkClick')">
         <router-link :to="defineTo(link)" :class="linkClass" v-if="link.type === 'internal'">
             {{ link.name }}
         </router-link>

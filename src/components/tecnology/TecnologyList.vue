@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
-import ServiceListItem from "./ServiceListItem.vue";
+import TecnologyListItem from "./TecnologyListItem.vue";
 import { Slide, Carousel } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/24/solid";
 
 const props = defineProps({
-    services: {
+    tecnologies: {
         type: Array,
         required: true,
     },
@@ -39,8 +39,8 @@ const prev = () => carouselRef.value.prev();
 <template>
     <div data-aos="fade-up">
         <Carousel v-bind="config" ref="carouselRef" v-model="currentSlide">
-            <Slide v-for="(service, index) in services" key="slide" class="carousel__item">
-                <ServiceListItem :service="service" :key="`service-${index}`" />
+            <Slide v-for="(tecnology, index) in tecnologies" :key="`tecnology-${index}`" class="carousel__item">
+                <TecnologyListItem :tecnology="tecnology" />
             </Slide>
         </Carousel>
     </div>

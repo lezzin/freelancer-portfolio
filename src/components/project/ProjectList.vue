@@ -51,12 +51,25 @@ const closeImageModal = () => {
 
 <template>
     <div class="grid grid-cols-1 gap-y-3 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mx-auto mt-16">
-        <ProjectListItem v-for="(project, index) in projects" :project="project" :key="index" :data-aos="index % 2 === 0 ? 'flip-right' : 'flip-left'" @openModal="openModal" />
+        <ProjectListItem
+            v-for="(project, index) in projects"
+            :project="project"
+            :key="`project-${index}`"
+            :data-aos="index % 2 === 0 ? 'flip-right' : 'flip-left'"
+            @openModal="openModal"
+        />
     </div>
 
     <Teleport to="#overlay">
         <TransitionGroup name="fade">
-            <DetailsModal :show="showDetailsModal" :details="selectedDetail" @close="closeDetailsModal" @openImageModal="openImageModal" @click.self="closeDetailsModal" :key="'details-modal'" />
+            <DetailsModal
+                :show="showDetailsModal"
+                :details="selectedDetail"
+                @close="closeDetailsModal"
+                @openImageModal="openImageModal"
+                @click.self="closeDetailsModal"
+                :key="'details-modal'"
+            />
             <ImageModal :show="showImageModal" :image="selectedImage" @close="closeImageModal" @click.self="closeImageModal" :key="'image-modal'" />
         </TransitionGroup>
     </Teleport>

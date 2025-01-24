@@ -10,12 +10,19 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
 </script>
 
 <template>
-    <header class="sticky top-0 z-10 ring-1 transition-all duration-500" :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-teal-900 bg-teal-800'">
+    <header
+        class="sticky top-0 z-20 ring-1 transition-all duration-500"
+        :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-teal-900 bg-teal-800'"
+    >
         <PageContainer class="flex items-center justify-between h-[10vh]" aria-label="Global">
             <AppLogo />
 
             <div class="hidden lg:flex lg:gap-x-3">
-                <AppLinks :linkClass="`text-base font-semibold ${hasHeaderBackground ? 'text-gray-900 hover:text-gray-700' : 'text-gray-100 hover:text-white'}`" />
+                <AppLinks
+                    :linkClass="`text-base font-semibold ${
+                        hasHeaderBackground ? 'text-gray-900 hover:text-gray-700' : 'text-gray-100 hover:text-white'
+                    }`"
+                />
             </div>
 
             <button type="button" @click="toggleMenu" class="flex lg:hidden">
@@ -26,7 +33,12 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
     </header>
 
     <transition name="menu">
-        <div v-if="isMenuOpen" class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden" role="dialog" aria-modal="true">
+        <div
+            v-if="isMenuOpen"
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden"
+            role="dialog"
+            aria-modal="true"
+        >
             <div class="flex items-center justify-between">
                 <AppLogo />
 
@@ -38,7 +50,10 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
 
             <div class="mt-6 flow-root">
                 <div class="space-y-2 py-6">
-                    <AppLinks linkClass="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" @linkClick="toggleMenu" />
+                    <AppLinks
+                        linkClass="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        @linkClick="toggleMenu"
+                    />
                 </div>
             </div>
         </div>

@@ -5,7 +5,9 @@ import { useRoute } from "vue-router";
 import HomeHero from "../components/sections/Home/HomeHero.vue";
 import HomeServices from "../components/sections/Home/HomeServices.vue";
 import HomeProjects from "../components/sections/Home/HomeProjects.vue";
+import HomeTecnologies from "../components/sections/Home/HomeTecnologies.vue";
 import HomeSteps from "../components/sections/Home/HomeSteps.vue";
+import HomeBanner from "../components/sections/Home/HomeBanner.vue";
 
 const route = useRoute();
 
@@ -23,6 +25,8 @@ onMounted(() => {
 <template>
     <HomeHero />
     <HomeServices />
+    <HomeBanner />
+    <HomeTecnologies />
     <HomeSteps />
     <HomeProjects />
 </template>

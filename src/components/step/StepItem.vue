@@ -31,9 +31,16 @@ onUnmounted(() => {
 
 <template>
     <ol class="space-y-8 mx-auto max-w-2xl relative">
-        <div v-show="showLine" class="absolute w-[.1rem] md:w-0.5 bg-yellow-600 inline-block absolute top-5 left-4 line"></div>
+        <div v-show="showLine" class="w-[.1rem] md:w-0.5 bg-yellow-600 inline-block absolute top-5 left-4 line"></div>
 
-        <StepListItem v-for="(step, index) in steps" :key="index" :step="step" :hasLine="index !== steps.length - 1" data-aos="fade-down" :data-aos-delay="index * 100" />
+        <StepListItem
+            v-for="(step, index) in steps"
+            :key="`step-${index}`"
+            :step="step"
+            :hasLine="index !== steps.length - 1"
+            data-aos="fade-down"
+            :data-aos-delay="index * 100"
+        />
     </ol>
 </template>
 <style scoped>

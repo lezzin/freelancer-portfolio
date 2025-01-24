@@ -1,5 +1,5 @@
 <script setup>
-import { ArrowRightIcon, PlusIcon } from "@heroicons/vue/20/solid";
+import { ArrowRightIcon, PlusIcon, CodeBracketIcon } from "@heroicons/vue/20/solid";
 import { RouterLink } from "vue-router";
 import LazyImage from "../../shared/LazyImage.vue";
 import PageContainer from "../../layout/PageContainer.vue";
@@ -11,46 +11,50 @@ import PageContainer from "../../layout/PageContainer.vue";
 
     <section class="overflow-x-hidden relative bg-teal-800 bg-opacity-90 min-h-[90vh] flex items-center">
         <PageContainer>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-0 py-16 lg:py-0 items-center">
-                <div class="text-center lg:text-left space-y-6">
-                    <p className="inline-flex gap-2 items-center justify-center lg:justify-start">
-                        <span className="text-yellow-300 font-semibold text-lg"> Olá, sou o Leandro </span>
-                        <span className="text-yellow-300/80 font-medium text-base"> (mais conhecido como Lezzin) </span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0">
+                <div class="text-center lg:text-left space-y-6 order-2 lg:order-1">
+                    <div class="inline-flex items-center rounded-full bg-teal-900/50 px-4 py-1.5 text-sm text-white">
+                        <CodeBracketIcon class="w-5 h-5 mr-2 text-teal-300" />
+                        Desenvolvedor Full-Stack
+                    </div>
+
+                    <h1 class="text-5xl lg:text-6xl font-bold text-white tracking-tight">Leandro Adrian</h1>
+
+                    <p class="text-xl text-teal-100 max-w-2xl mx-auto lg:mx-0">
+                        Transforme suas ideias em realidade com soluções web modernas e eficientes. De <strong>aplicativos dinâmicos</strong> a
+                        <strong>websites responsivos</strong>, ofereço serviços personalizados para atender às suas necessidades. Vamos colaborar para
+                        criar algo incrível!
                     </p>
 
-                    <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100" data-aos="fade-right" data-aos-delay="100">Desenvolvedor Full-Stack</h1>
-
-                    <p class="text-base sm:text-xl text-slate-200 font-semibold mt-8 mb-12" data-aos="fade-right" data-aos-delay="200">
-                        Transforme suas ideias em realidade com soluções web modernas e eficientes. De <span class="text-white font-bold">aplicativos dinâmicos</span> a
-                        <span class="text-white font-bold">websites responsivos</span>, ofereço serviços personalizados para atender às suas necessidades. Vamos colaborar para criar algo incrível!
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2 md:gap-4">
-                        <router-link
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <RouterLink
                             to="#projects"
-                            class="flex items-center justify-center gap-2 rounded-full bg-yellow-300 px-5 py-2.5 text-base font-bold text-teal-800 shadow-sm hover:bg-yellow-400 focus-button focus-visible:outline-yellow-400"
-                            data-aos="fade-right"
-                            data-aos-delay="400"
+                            class="flex items-center justify-center gap-2 px-6 py-3 bg-yellow-400 text-teal-900 font-bold rounded-full hover:bg-yellow-500 transition-colors"
                         >
                             <PlusIcon class="w-5 h-5" />
-                            Visualizar Projetos
-                        </router-link>
+                            Ver projetos
+                        </RouterLink>
 
-                        <router-link
+                        <RouterLink
                             to="/contact"
-                            class="flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-base font-medium border border-yellow-300 text-yellow-300 hover:bg-teal-900 focus-button focus-visible:outline-white"
-                            data-aos="fade-right"
-                            data-aos-delay="450"
+                            class="flex items-center justify-center gap-2 px-6 py-3 border-2 border-yellow-400 text-yellow-400 rounded-full hover:bg-teal-800 transition-colors"
                         >
-                            <span>Contato</span>
+                            Contato
                             <ArrowRightIcon class="w-5 h-5" />
-                        </router-link>
+                        </RouterLink>
                     </div>
                 </div>
 
-                <div data-aos="zoom-in-left">
-                    <div class="bg-gray-200 bg-opacity-40 ring-1 ring-gray-900/10 p-2 md:p-4 rounded-xl lg:translate-x-40 lg:h-[600px] aspect-square md:aspect-auto shadow-2xl">
-                        <LazyImage url="/img/profile-png.png" alt="Imagem do projeto" class="rounded-lg ring-1 ring-gray-900/10 object-cover w-full h-full" />
+                <div class="order-1 lg:order-2 flex justify-center mb-12 lg:mb-0 ms-0 md:ms-auto">
+                    <div class="lg:w-[500px] lg:h-[500px] relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full blur-2xl opacity-50"></div>
+                        <div class="relative z-10 bg-white/10 backdrop-blur-lg rounded-full p-4 shadow-2xl">
+                            <LazyImage
+                                url="img/profile-png.png"
+                                alt="Leandro Adriann"
+                                class="rounded-full object-cover w-full h-full border-4 border-white/20"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

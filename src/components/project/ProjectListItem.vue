@@ -13,7 +13,10 @@ const emit = defineEmits(["openModal"]);
 </script>
 
 <template>
-    <article class="bg-gray-100 p-4 ring-1 ring-gray-300 shadow-lg rounded-md transition-all hover:shadow-xl flex flex-col justify-between" aria-labelledby="project-title-{{ project.id }}">
+    <article
+        class="bg-gray-100 p-4 ring-1 ring-gray-300 shadow-lg rounded-md transition-all hover:shadow-xl flex flex-col justify-between"
+        aria-labelledby="project-title-{{ project.id }}"
+    >
         <header>
             <h3 id="project-title-{{ project.id }}" class="text-lg font-semibold text-gray-900">{{ project.name }}</h3>
             <p class="mt-2 text-sm text-gray-600">{{ project.description }}</p>
