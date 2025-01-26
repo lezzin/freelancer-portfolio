@@ -1,8 +1,8 @@
 export default [
     {
         step: "1",
-        title: "Levantamento de Ideias",
-        description: "Entender e anotar tudo o que é necessário para o site, garantindo que ele atenda às expectativas.",
+        title: "Levantamento de Requisitos",
+        description: "Entender suas necessidades para garantir que o site atenda às suas expectativas.",
     },
     {
         step: "2",
@@ -11,22 +11,22 @@ export default [
     },
     {
         step: "3",
-        title: "Criação",
-        description: "Construir o site com design e programação, transformando as ideias em realidade.",
+        title: "Desenvolvimento",
+        description: "Construir o site com as tecnologias escolhidas, buscando sempre seu feedback.",
     },
     {
         step: "4",
         title: "Testes",
-        description: "Checar se o site funciona bem em diferentes dispositivos e navegadores.",
+        description: "Verificar se o site funciona corretamente e está seguro.",
     },
     {
         step: "5",
         title: "Publicação",
-        description: "Colocar o site no ar de forma organizada e eficiente.",
+        description: "Colocar o site no ar para que as pessoas possam acessá-lo.",
     },
     {
         step: "6",
         title: "Manutenção",
-        description: "Acompanhar e melhorar o site para mantê-lo atualizado e funcionando bem.",
+        description: "Acompanhar o site e fazer melhorias para mantê-lo atualizado e funcionando bem.",
     },
 ];

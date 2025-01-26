@@ -21,9 +21,8 @@ import PageContainer from "../../layout/PageContainer.vue";
                     <h1 class="text-5xl lg:text-6xl font-bold text-white tracking-tight">Leandro Adrian</h1>
 
                     <p class="text-xl text-teal-100 max-w-2xl mx-auto lg:mx-0">
-                        Transforme suas ideias em realidade com soluções web modernas e eficientes. De <strong>aplicativos dinâmicos</strong> a
-                        <strong>websites responsivos</strong>, ofereço serviços personalizados para atender às suas necessidades. Vamos colaborar para
-                        criar algo incrível!
+                        Transforme suas ideias em realidade com soluções web modernas. Crio desde <strong>landing pages</strong> até
+                        <strong>sistemas personalizados</strong>, tudo feito sob medida para você. Vamos criar algo incrível juntos!
                     </p>
 
                     <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
