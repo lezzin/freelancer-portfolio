@@ -9,7 +9,7 @@ const props = defineProps({
 const categoryColors = {
     Backend: "bg-blue-100 text-blue-800",
     Frontend: "bg-green-100 text-green-800",
-    Styling: "bg-purple-100 text-purple-800",
+    Estilo: "bg-purple-100 text-purple-800",
     CMS: "bg-yellow-100 text-yellow-800",
 };
 </script>

@@ -2,8 +2,8 @@ import { UserGroupIcon, CodeBracketIcon, CheckBadgeIcon } from "@heroicons/vue/2
 
 export default [
     {
-        number: 2,
-        label: "Clientes satisfeitos",
+        number: 1,
+        label: "Cliente satisfeito",
         icon: UserGroupIcon,
     },
     {
@@ -12,7 +12,7 @@ export default [
         icon: CodeBracketIcon,
     },
     {
-        number: 2,
+        number: 3,
         label: "Projetos concluídos",
         icon: CheckBadgeIcon,
     },

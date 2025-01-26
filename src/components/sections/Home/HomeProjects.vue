@@ -5,8 +5,8 @@ import projects from "../../../mock/projects";
 import ProjectList from "../../project/ProjectList.vue";
 
 const header = {
-    title: "Meus Projetos Realizados",
-    description: "Explore abaixo os projetos que já desenvolvi e veja o que posso fazer por você!",
+    title: "Projetos Realizados",
+    description: "Confira os projetos que desenvolvi e veja como posso ajudar você!",
 };
 </script>
 

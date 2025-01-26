@@ -5,13 +5,13 @@ import SectionHeader from "../../shared/SectionHeader.vue";
 import tecnologies from "../../../mock/tecnologies";
 
 const header = {
-    title: "Tecnologias de Ponta para Projetos Inovadores",
-    description: "Utilizo ferramentas e tecnologias modernas para oferecer soluções eficientes e de alta qualidade.",
+    title: "Tecnologia Moderna para Projetos Criativos",
+    description: "Uso ferramentas atuais para entregar soluções eficientes e de qualidade.",
 };
 </script>
 
 <template>
-    <PageSection id="services" class="bg-slate-100 overflow-hidden">
+    <PageSection id="tecnologies" class="bg-slate-100 overflow-hidden">
         <SectionHeader :section-title="header.title" :section-description="header.description" />
 
         <div class="mx-auto mt-16 max-w-4xl lg:max-w-7xl">

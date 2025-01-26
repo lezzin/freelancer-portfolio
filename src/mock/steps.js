@@ -1,32 +1,32 @@
 export default [
     {
         step: "1",
-        title: "Levantamento de Requisitos",
-        description: "Coletar e documentar todos os requisitos necessários para o desenvolvimento do website.",
+        title: "Levantamento de Ideias",
+        description: "Entender e anotar tudo o que é necessário para o site, garantindo que ele atenda às expectativas.",
     },
     {
         step: "2",
         title: "Planejamento",
-        description: "Definir o escopo do projeto, cronograma e recursos necessários.",
+        description: "Organizar as etapas do projeto, definindo prazos e recursos para colocar as ideias em prática.",
     },
     {
         step: "3",
-        title: "Desenvolvimento",
-        description: "Codificar o website utilizando as tecnologias e ferramentas escolhidas.",
+        title: "Criação",
+        description: "Construir o site com design e programação, transformando as ideias em realidade.",
     },
     {
         step: "4",
         title: "Testes",
-        description: "Realizar testes para garantir que o website funcione corretamente em diferentes dispositivos e navegadores.",
+        description: "Checar se o site funciona bem em diferentes dispositivos e navegadores.",
     },
     {
         step: "5",
-        title: "Implantação",
-        description: "Publicar o website no servidor de produção e realizar as configurações necessárias.",
+        title: "Publicação",
+        description: "Colocar o site no ar de forma organizada e eficiente.",
     },
     {
         step: "6",
         title: "Manutenção",
-        description: "Monitorar o website e realizar atualizações e correções conforme necessário.",
+        description: "Acompanhar e melhorar o site para mantê-lo atualizado e funcionando bem.",
     },
 ];

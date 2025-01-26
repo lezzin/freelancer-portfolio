@@ -1,34 +1,39 @@
-import { CodeBracketIcon, CircleStackIcon, CloudIcon, MagnifyingGlassIcon, FaceSmileIcon, LifebuoyIcon } from "@heroicons/vue/24/outline";
+import { CircleStackIcon, CloudIcon, CodeBracketIcon, FaceSmileIcon, LifebuoyIcon, MagnifyingGlassIcon } from "@heroicons/vue/16/solid";
 
 export default [
     {
-        name: "Desenvolvimento Full-stack",
-        description: "Criação de aplicações completas com front-end e back-end modernos.",
-        icon: CloudIcon,
-    },
-    {
-        name: "Sistemas Personalizados",
-        description: "Soluções sob medida para necessidades específicas do seu negócio.",
-        icon: CircleStackIcon,
-    },
-    {
         name: "Landing Pages",
-        description: "Páginas atraentes para capturar leads e promover produtos.",
+        description: "Páginas atraentes para divulgar produtos e captar clientes.",
         icon: CodeBracketIcon,
     },
     {
+        name: "E-commerce",
+        description: "Desenvolvimento de lojas virtuais completas para vender seus produtos online.",
+        icon: CloudIcon,
+    },
+    {
+        name: "Desenvolvimento Full-stack",
+        description: "Criação de sites e sistemas completos, do visual ao funcionamento interno.",
+        icon: CloudIcon,
+    },
+    {
+        name: "Suporte Técnico",
+        description: "Ajuda para manter seu site funcionando sempre bem.",
+        icon: LifebuoyIcon,
+    },
+    {
+        name: "Sistemas Personalizados",
+        description: "Soluções feitas especialmente para as necessidades do seu negócio.",
+        icon: CircleStackIcon,
+    },
+    {
         name: "SEO",
-        description: "Otimização de sites para melhorar visibilidade em buscas.",
+        description: "Otimização para que seu site apareça melhor nos buscadores.",
         icon: MagnifyingGlassIcon,
     },
     {
         name: "Acessibilidade",
-        description: "Aplicações acessíveis para todos os usuários.",
+        description: "Crio sites fáceis de usar por qualquer pessoa.",
         icon: FaceSmileIcon,
-    },
-    {
-        name: "Suporte Técnico",
-        description: "Assistência para manter suas aplicações funcionando.",
-        icon: LifebuoyIcon,
     },
 ];

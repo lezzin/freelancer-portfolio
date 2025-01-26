@@ -10,6 +10,11 @@ export default [
         type: "internal",
     },
     {
+        name: "Tecnologias",
+        target: "#tecnologies",
+        type: "internal",
+    },
+    {
         name: "Projetos",
         target: "#projects",
         type: "internal",

@@ -48,12 +48,10 @@ import PageContainer from "../../layout/PageContainer.vue";
                 <div class="order-1 lg:order-2 flex justify-center mb-12 lg:mb-0 ms-0 md:ms-auto">
                     <div class="lg:w-[500px] lg:h-[500px] relative">
                         <div class="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full blur-2xl opacity-50"></div>
-                        <div class="relative z-10 bg-white/10 backdrop-blur-lg rounded-full p-4 shadow-2xl">
-                            <LazyImage
-                                url="img/profile-png.png"
-                                alt="Leandro Adriann"
-                                class="rounded-full object-cover w-full h-full border-4 border-white/20"
-                            />
+                        <div class="relative bg-white/10 backdrop-blur-lg rounded-full">
+                            <div class="rounded-full p-4 shadow-2xl border-4 border-white/20 overflow-hidden">
+                                <LazyImage url="img/profile.png" alt="Leandro Adrian" class="rounded-full object-cover w-full h-full bg-teal-800" />
+                            </div>
                         </div>
                     </div>
                 </div>

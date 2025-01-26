@@ -5,8 +5,8 @@ import StepItem from "../../step/StepItem.vue";
 import steps from "../../../mock/steps.js";
 
 const header = {
-    title: "Construção de Websites: Cada Etapa Contada",
-    description: "Para criar soluções que realmente funcionam, sigo um processo estruturado e transparente. Conheça cada etapa do desenvolvimento:",
+    title: "Criação de Websites Passo a Passo",
+    description: "Sigo um processo claro e organizado para entregar soluções que funcionam. Confira as etapas:",
 };
 </script>
 
