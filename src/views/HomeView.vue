@@ -24,7 +24,7 @@ onMounted(() => {
 
 <template>
     <HomeHero />
-    <HomeBanner />
+    <!-- <HomeBanner /> -->
     <HomeServices />
     <HomeTecnologies />
     <HomeSteps />
