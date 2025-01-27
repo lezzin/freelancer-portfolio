@@ -35,7 +35,7 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
     <transition name="menu">
         <div
             v-if="isMenuOpen"
-            :class="`fixed inset-y-0 right-0 z-10 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden transition-color duration-500 ${
+            :class="`fixed inset-y-0 right-0 z-20 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden transition-color duration-500 ${
                 hasHeaderBackground ? 'bg-gray-50' : 'bg-teal-700'
             }`"
             role="dialog"
@@ -44,7 +44,11 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
             <div class="flex items-center justify-between">
                 <AppLogo />
 
-                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-red-600" @click="toggleMenu">
+                <button
+                    type="button"
+                    :class="`-m-2.5 rounded-md p-2.5 ${hasHeaderBackground ? 'text-black' : 'text-white'}  hover:text-red-600`"
+                    @click="toggleMenu"
+                >
                     <span class="sr-only">Close menu</span>
                     <XMarkIcon class="size-8" />
                 </button>
@@ -53,8 +57,8 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
             <div class="mt-6 flow-root">
                 <div class="space-y-2 py-6">
                     <AppLinks
-                        :linkClass="`transition-color duration-500 -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  text-white text-center ${
-                            hasHeaderBackground ? 'text-black hover:bg-gray-200' : 'text-gray-900 hover:bg-teal-800'
+                        :linkClass="`transition-color duration-500 -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-center ${
+                            hasHeaderBackground ? 'text-black hover:bg-gray-200' : 'text-white hover:bg-teal-800'
                         }`"
                         linkClass=""
                         @linkClick="toggleMenu"
