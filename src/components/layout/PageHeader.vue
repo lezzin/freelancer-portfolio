@@ -35,13 +35,13 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
     <transition name="menu">
         <div
             v-if="isMenuOpen"
-            :class="`fixed inset-y-0 right-0 z-20 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden transition-color duration-500 ${
+            :class="`fixed inset-y-0 right-0 z-20 w-full overflow-y-auto sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden transition-color duration-500 ${
                 hasHeaderBackground ? 'bg-gray-50' : 'bg-teal-700'
             }`"
             role="dialog"
             aria-modal="true"
         >
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between border-b px-6 py-3" :class="hasHeaderBackground ? 'border-slate-300' : 'border-teal-900'">
                 <AppLogo />
 
                 <button
@@ -54,8 +54,8 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
                 </button>
             </div>
 
-            <div class="mt-6 flow-root">
-                <div class="space-y-2 py-6">
+            <div class="mt-6 flow-root px-6 py-3">
+                <div class="space-y-2">
                     <AppLinks
                         :linkClass="`transition-color duration-500 -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-center ${
                             hasHeaderBackground ? 'text-black hover:bg-gray-200' : 'text-white hover:bg-teal-800'
