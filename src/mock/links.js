@@ -6,17 +6,17 @@ export default [
     },
     {
         name: "Serviços",
-        target: "#services",
+        target: "/#services",
         type: "internal",
     },
     {
         name: "Tecnologias",
-        target: "#tecnologies",
+        target: "/#tecnologies",
         type: "internal",
     },
     {
         name: "Projetos",
-        target: "#projects",
+        target: "/#projects",
         type: "internal",
     },
     {
