@@ -8,7 +8,7 @@ const props = defineProps({
 });
 
 const getSectionClasses = () => {
-    return ["overflow-x-hidden", props.centered ? "py-4 md:p-0" : "py-16", props.withBg ? "bg-gray-100" : ""].join(" ").trim();
+    return ["overflow-x-hidden", props.centered ? "min-h-[90vh]" : "py-16", props.withBg ? "bg-gray-100" : ""].join(" ").trim();
 };
 </script>
 
