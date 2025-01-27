@@ -6,10 +6,10 @@ import PageContainer from "../../layout/PageContainer.vue";
 </script>
 
 <template>
-    <div class="absolute inset-0 bg-square-pattern bg-no-repeat opacity-30"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-teal-800 to-transparent opacity-90"></div>
-
     <section class="overflow-x-hidden relative bg-teal-800 bg-opacity-90 min-h-[90vh] flex items-center">
+        <div class="absolute inset-0 bg-square-pattern bg-no-repeat opacity-30 z-[-1]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-teal-800 lg:from-teal-800 lg:to-transparent opacity-90 z-[-1]"></div>
+
         <PageContainer>
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center py-16 lg:py-0">
                 <div class="text-center lg:text-left space-y-6 order-2 lg:order-1">
