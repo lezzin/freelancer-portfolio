@@ -41,7 +41,10 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
             role="dialog"
             aria-modal="true"
         >
-            <div class="flex items-center justify-between border-b px-6 py-3" :class="hasHeaderBackground ? 'border-slate-300' : 'border-teal-900'">
+            <div
+                class="flex items-center justify-between border-b px-6 h-[10vh]"
+                :class="hasHeaderBackground ? 'border-slate-300' : 'border-teal-900'"
+            >
                 <AppLogo />
 
                 <button
