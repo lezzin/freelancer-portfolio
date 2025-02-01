@@ -10,7 +10,6 @@ const props = defineProps({
 });
 
 const showLine = ref(false);
-const line = ref(null);
 
 function handleScroll() {
     const el = document.querySelector(".line");
@@ -30,18 +29,20 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <ol class="space-y-8 mx-auto max-w-2xl relative">
+    <div class="relative max-w-2xl mx-auto">
         <div v-show="showLine" class="w-[.1rem] md:w-0.5 bg-yellow-600 inline-block absolute top-5 left-4 line"></div>
 
-        <StepListItem
-            v-for="(step, index) in steps"
-            :key="`step-${index}`"
-            :step="step"
-            :hasLine="index !== steps.length - 1"
-            data-aos="fade-down"
-            :data-aos-delay="index * 100"
-        />
-    </ol>
+        <ol class="space-y-8 mx-auto">
+            <StepListItem
+                v-for="(step, index) in steps"
+                :key="`step-${index}`"
+                :step="step"
+                :hasLine="index !== steps.length - 1"
+                data-aos="fade-down"
+                :data-aos-delay="index * 100"
+            />
+        </ol>
+    </div>
 </template>
 <style scoped>
 @keyframes growLine {

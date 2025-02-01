@@ -11,7 +11,11 @@ const props = defineProps({
     <teleport to="#overlay">
         <transition name="loader">
             <div class="fixed inset-0 z-50 bg-white flex items-center justify-center" v-if="props.control">
-                <span class="h-8 w-8 animate-spin rounded-full border-4 border-teal-600 border-e-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status"> </span>
+                <span
+                    class="h-8 w-8 animate-spin rounded-full border-4 border-teal-600 border-e-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                    role="status"
+                >
+                </span>
             </div>
         </transition>
     </teleport>

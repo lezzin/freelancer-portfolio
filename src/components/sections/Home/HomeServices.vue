@@ -5,7 +5,7 @@ import SectionHeader from "../../shared/SectionHeader.vue";
 import services from "../../../mock/services";
 
 const header = {
-    title: "Soluções Sob Medida para o Seu Negócio",
+    title: 'Soluções <span class="text-gradient">sob medida</span> para o seu negócio',
     description: "Transforme suas ideias em realidade com serviços feitos para as suas necessidades.",
 };
 </script>

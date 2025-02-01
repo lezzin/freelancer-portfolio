@@ -11,7 +11,7 @@ export default [
     },
     {
         name: "Tecnologias",
-        target: "/#tecnologies",
+        target: "/#technologies",
         type: "internal",
     },
     {

@@ -6,7 +6,7 @@ import PageContainer from "../../layout/PageContainer.vue";
 </script>
 
 <template>
-    <section class="overflow-x-hidden relative bg-teal-800 bg-opacity-90 min-h-[90vh] flex items-center">
+    <section class="overflow-x-hidden relative bg-teal-800 bg-opacity-90 min-h-[90vh] flex items-center hero-section">
         <div class="absolute inset-0 bg-square-pattern bg-no-repeat opacity-30 z-[-1]"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-teal-800 lg:from-teal-800 lg:to-transparent opacity-90 z-[-1]"></div>
 
@@ -49,7 +49,7 @@ import PageContainer from "../../layout/PageContainer.vue";
                         <div class="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full blur-2xl opacity-50"></div>
                         <div class="bg-white/10 backdrop-blur-lg rounded-full">
                             <div class="rounded-full p-4 shadow-2xl border-4 border-white/20 overflow-hidden">
-                                <LazyImage url="img/profile.png" alt="Leandro Adrian" class="rounded-full object-cover w-full h-full bg-teal-800" />
+                                <LazyImage url="img/profile.png" alt="Leandro Adrian" class="rounded-full object-cover w-full h-full bg-yellow-400" />
                             </div>
                         </div>
                     </div>

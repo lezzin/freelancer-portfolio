@@ -1,21 +1,21 @@
 <script setup>
-import TecnologyList from "../../tecnology/TecnologyList.vue";
+import TechnologyList from "../../technology/TechnologyList.vue";
 import PageSection from "../../layout/PageSection.vue";
 import SectionHeader from "../../shared/SectionHeader.vue";
-import tecnologies from "../../../mock/tecnologies";
+import technologies from "../../../mock/technologies";
 
 const header = {
-    title: "Tecnologia Moderna para Projetos Criativos",
+    title: 'Tecnologia moderna para <span class="text-gradient">projetos criativos</span>',
     description: "Uso ferramentas atuais para entregar soluções eficientes e de qualidade.",
 };
 </script>
 
 <template>
-    <PageSection id="tecnologies" class="bg-slate-100 overflow-hidden">
+    <PageSection id="technologies">
         <SectionHeader :section-title="header.title" :section-description="header.description" />
 
         <div class="mx-auto mt-16 max-w-4xl lg:max-w-7xl">
-            <TecnologyList :tecnologies="tecnologies" />
+            <TechnologyList :technologies="technologies" />
         </div>
     </PageSection>
 </template>
