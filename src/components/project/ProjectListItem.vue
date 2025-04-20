@@ -38,7 +38,7 @@ const emit = defineEmits(["openModal"]);
                 </a>
 
                 <button
-                    class="flex items-center gap-2 px-2 py-1 rounded text-green-800 hover:text-green-700 border border-green-800 focus-button focus-visible:outline-green-800"
+                    class="flex items-center gap-2 px-2 py-1 rounded text-green-800 hover:bg-green-100 border border-green-800 focus-button focus-visible:outline-green-800"
                     @click="emit('openModal', project)"
                     aria-label="Ver mais sobre {{ project.name }}"
                 >

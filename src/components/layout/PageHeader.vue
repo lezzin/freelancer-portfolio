@@ -20,7 +20,7 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
             <div class="hidden lg:flex lg:gap-x-3">
                 <AppLinks
                     :linkClass="`text-base font-semibold ${
-                        hasHeaderBackground ? 'text-gray-900 hover:text-gray-700' : 'text-gray-100 hover:text-white'
+                        hasHeaderBackground ? 'text-gray-900 hover:text-green-800' : 'text-gray-100 hover:text-green-300'
                     }`"
                 />
             </div>

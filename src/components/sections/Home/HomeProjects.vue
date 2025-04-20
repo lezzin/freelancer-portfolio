@@ -11,7 +11,7 @@ const header = {
 </script>
 
 <template>
-    <PageSection id="projects">
+    <PageSection id="projects" class="bg-gray-50 bg-opacity-80">
         <SectionHeader :section-title="header.title" :section-description="header.description" />
         <ProjectList :projects="projects" />
     </PageSection>
