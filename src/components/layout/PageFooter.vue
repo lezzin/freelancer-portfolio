@@ -4,7 +4,7 @@ import AppLogo from "../shared/AppLogo.vue";
 </script>
 
 <template>
-    <footer class="bg-teal-800 text-gray-100">
+    <footer class="bg-green-800 text-gray-100">
         <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center space-y-6">
                 <AppLogo variant="normal" />
@@ -15,7 +15,7 @@ import AppLogo from "../shared/AppLogo.vue";
             </div>
         </div>
 
-        <div class="bg-teal-900 py-3">
+        <div class="bg-green-900 py-3">
             <p class="text-sm text-center text-gray-300">
                 © {{ new Date().getFullYear() }} <a href="https://lezzin.github.io" class="hover:text-gray-300" target="_blank">Lezzin</a>. Todos os
                 direitos reservados.

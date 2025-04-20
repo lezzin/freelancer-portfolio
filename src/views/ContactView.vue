@@ -125,7 +125,7 @@ onMounted(() => {
                         v-model="fields.name"
                         @input="validateName"
                         placeholder="Digite seu nome completo"
-                        class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm/6"
+                        class="contact-field"
                     />
                     <p v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</p>
                 </div>
@@ -138,7 +138,7 @@ onMounted(() => {
                         v-model="fields.email"
                         @input="validateEmail"
                         placeholder="Digite seu e-mail"
-                        class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm/6"
+                        class="contact-field"
                     />
                     <p v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</p>
                 </div>
@@ -151,7 +151,7 @@ onMounted(() => {
                         @input="validateMessage"
                         rows="4"
                         placeholder="Escreva sua dúvida ou mensagem aqui"
-                        class="mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm/6"
+                        class="contact-field"
                     ></textarea>
                     <p v-if="errors.message" class="text-red-500 text-sm">{{ errors.message }}</p>
                 </div>
@@ -160,10 +160,16 @@ onMounted(() => {
             <button
                 type="submit"
                 :disabled="isFormInvalid"
-                class="mt-10 block w-full rounded-md bg-red-600 text-white px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm hover:bg-red-800 focus-button focus-visible:outline-red-600"
+                class="mt-10 block w-full rounded-md bg-yellow-600 text-white px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm disabled:opacity-80 disabled:cursor-not-allowed enabled:hover:bg-yellow-800 focus-button focus-visible:outline-yellow-600"
             >
                 {{ isSending ? "Enviando..." : "🚀 Enviar mensagem" }}
             </button>
         </form>
     </PageSection>
 </template>
+
+<style scoped lang="postcss">
+.contact-field {
+    @apply mt-1 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm/6;
+}
+</style>

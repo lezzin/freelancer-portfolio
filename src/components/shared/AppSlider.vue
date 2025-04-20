@@ -54,12 +54,12 @@ const attrs = useAttrs();
     </div>
 
     <div class="mt-8 flex md:justify-center pl-4 md:pl-0 gap-2">
-        <button type="button" class="button-back" @click="prev" data-aos="fade-left">
+        <button type="button" class="slider-button" @click="prev" data-aos="fade-left">
             <ChevronLeftIcon class="size-5" />
             <span class="sr-only">Previous</span>
         </button>
 
-        <button type="button" class="button-back" @click="next" data-aos="fade-right">
+        <button type="button" class="slider-button" @click="next" data-aos="fade-right">
             <ChevronRightIcon class="size-5" />
             <span class="sr-only">Next</span>
         </button>

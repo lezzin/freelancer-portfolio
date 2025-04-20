@@ -26,18 +26,16 @@
 
 .text-gradient {
     @apply text-gray-900;
+
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #648bd3, #1267fc 62%, #ad2bfd);
+    background-image: linear-gradient(90deg, #648bd3, #12b886 40%, #1267fc 62%, #ad2bfd);
     -webkit-background-clip: text;
     background-clip: text;
-    /* Added a white text stroke for better visibility */
-    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);
-    /* Modified text shadow for cleaner look */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.button-back {
-    @apply w-12 aspect-square border border-red-600 text-red-600 bg-red-100 hover:bg-red-200 rounded-full grid place-items-center;
+.slider-button {
+    @apply w-12 aspect-square border border-yellow-600 text-yellow-600 bg-yellow-100 hover:bg-yellow-200 rounded-full grid place-items-center;
 }
 
 section:nth-child(odd):not(.hero-section) {

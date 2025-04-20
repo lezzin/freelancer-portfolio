@@ -12,7 +12,7 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
 <template>
     <header
         class="sticky top-0 z-20 ring-1 transition-all duration-500"
-        :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-teal-900 bg-teal-800'"
+        :class="hasHeaderBackground ? 'ring-slate-300 bg-white bg-opacity-80 backdrop-blur-md' : 'ring-green-900 bg-green-800'"
     >
         <PageContainer class="flex items-center justify-between h-[10vh]" aria-label="Global">
             <AppLogo />
@@ -36,14 +36,14 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
         <div
             v-if="isMenuOpen"
             :class="`fixed inset-y-0 right-0 z-20 w-full overflow-y-auto sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 lg:hidden transition-color duration-500 ${
-                hasHeaderBackground ? 'bg-gray-50' : 'bg-teal-700'
+                hasHeaderBackground ? 'bg-gray-50' : 'bg-green-700'
             }`"
             role="dialog"
             aria-modal="true"
         >
             <div
                 class="flex items-center justify-between border-b px-6 h-[10vh]"
-                :class="hasHeaderBackground ? 'border-slate-300' : 'border-teal-900'"
+                :class="hasHeaderBackground ? 'border-slate-300' : 'border-green-900'"
             >
                 <AppLogo />
 
@@ -61,7 +61,7 @@ const { hasHeaderBackground, isMenuOpen, toggleMenu } = useHeader();
                 <div class="space-y-2">
                     <AppLinks
                         :linkClass="`transition-color duration-500 -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-center ${
-                            hasHeaderBackground ? 'text-black hover:bg-gray-200' : 'text-white hover:bg-teal-800'
+                            hasHeaderBackground ? 'text-black hover:bg-gray-200' : 'text-white hover:bg-green-800'
                         }`"
                         linkClass=""
                         @linkClick="toggleMenu"

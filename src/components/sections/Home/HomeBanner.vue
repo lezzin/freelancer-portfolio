@@ -14,18 +14,18 @@ import achievements from "../../../mock/achievements";
                     :data-aos-delay="100 * index"
                 >
                     <div
-                        class="relative bg-gray-800/60 rounded-xl p-6 h-full flex flex-col items-center text-center transform group-hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-teal-500/50"
+                        class="relative bg-gray-800/60 rounded-xl p-6 h-full flex flex-col items-center text-center transform group-hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-green-500/50"
                     >
-                        <div class="bg-teal-800/60 rounded-full w-24 h-24 flex items-center justify-center mb-6">
+                        <div class="bg-green-800/60 rounded-full w-24 h-24 flex items-center justify-center mb-6">
                             <component
                                 :is="achievement.icon"
-                                class="w-14 h-14 text-teal-300 group-hover:text-teal-200 group-hover:scale-110 transition-transform duration-300"
+                                class="w-14 h-14 text-green-300 group-hover:text-green-200 group-hover:scale-110 transition-transform duration-300"
                             />
                         </div>
 
                         <div class="flex flex-col items-center">
                             <span
-                                class="text-2xl font-black text-teal-200 tracking-tight mb-2 group-hover:text-teal-100 transition-colors duration-300"
+                                class="text-2xl font-black text-green-200 tracking-tight mb-2 group-hover:text-green-100 transition-colors duration-300"
                             >
                                 {{ achievement.prefix }}{{ achievement.number }}
                             </span>

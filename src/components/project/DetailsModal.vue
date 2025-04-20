@@ -32,7 +32,7 @@ const emit = defineEmits(["openImageModal", "close"]);
             <a
                 :href="details.deployUrl"
                 target="_blank"
-                class="flex items-center w-fit justify-center gap-2 rounded bg-teal-800 px-2 py-1 text-base font-semibold text-gray-100 shadow-sm hover:bg-teal-700 focus-button focus-visible:outline-teal-800"
+                class="flex items-center w-fit justify-center gap-2 rounded bg-green-800 px-2 py-1 text-base font-semibold text-gray-100 shadow-sm hover:bg-green-700 focus-button focus-visible:outline-green-800"
             >
                 <PlusIcon class="w-5 h-5" />
                 Visualizar Projeto

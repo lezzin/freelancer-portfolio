@@ -29,7 +29,7 @@ const emit = defineEmits(["openModal"]);
                 <a
                     :href="project.deployUrl"
                     target="_blank"
-                    class="flex items-center justify-center gap-2 rounded bg-teal-800 px-2 py-1 text-base font-semibold text-gray-100 shadow-sm hover:bg-teal-700 focus-button focus-visible:outline-teal-800"
+                    class="flex items-center justify-center gap-2 rounded bg-green-800 px-2 py-1 text-base font-semibold text-gray-100 shadow-sm hover:bg-green-700 focus-button focus-visible:outline-green-800"
                     data-aos="fade-right"
                     data-aos-delay="400"
                 >
@@ -38,7 +38,7 @@ const emit = defineEmits(["openModal"]);
                 </a>
 
                 <button
-                    class="flex items-center gap-2 px-2 py-1 rounded text-teal-800 hover:text-teal-700 border border-teal-800 focus-button focus-visible:outline-teal-800"
+                    class="flex items-center gap-2 px-2 py-1 rounded text-green-800 hover:text-green-700 border border-green-800 focus-button focus-visible:outline-green-800"
                     @click="emit('openModal', project)"
                     aria-label="Ver mais sobre {{ project.name }}"
                 >

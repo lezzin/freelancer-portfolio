@@ -9,7 +9,7 @@ const props = defineProps({
     },
     coloring: {
         type: String,
-        default: "bg-teal-600 ring-teal-900",
+        default: "bg-green-600 ring-green-900",
     },
 });
 
