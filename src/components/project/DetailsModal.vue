@@ -1,6 +1,7 @@
 <script setup>
 import { imageUrl } from "../../utils/urlUtils";
 import { XMarkIcon, PlusIcon } from "@heroicons/vue/24/solid";
+import AppBadge from "../shared/AppBadge.vue";
 
 const props = defineProps({
     show: {
@@ -26,8 +27,12 @@ const emit = defineEmits(["openImageModal", "close"]);
                 <XMarkIcon class="size-6" />
             </button>
 
-            <h4 class="text-xl font-semibold text-gray-800 mb-4">Detalhes à respeito do projeto "{{ details.name }}"</h4>
-            <div class="prose mt-2 text-base text-gray-700 mb-8" v-html="details.detailedDescription"></div>
+            <h4 class="text-xl font-semibold text-gray-800 mb-8">Detalhes à respeito do projeto "{{ details.name }}"</h4>
+            <div class="prose mt-2 text-base text-gray-700 mb-2" v-html="details.detailedDescription"></div>
+
+            <div class="flex flex-wrap items-center gap-1 mb-8">
+                <AppBadge v-for="skill in details.skills">{{ skill }}</AppBadge>
+            </div>
 
             <a
                 :href="details.deployUrl"

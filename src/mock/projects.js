@@ -1,4 +1,5 @@
 const projects = [
+    // -------------------------- MENTES EM FLASH -----------------------------
     {
         image: "mentesemflash.webp",
         imageDetails: [
@@ -14,6 +15,8 @@ const projects = [
         skills: ["PHP", "CodeIgniter", "Vue.js", "MySQL"],
         deployUrl: "http://mentesemflash.com",
     },
+
+    // -------------------------- CHATBOT -------------------------------------
     {
         image: "chatbot.webp",
         imageDetails: [
@@ -21,7 +24,7 @@ const projects = [
             { src: "chatbot-2.png", label: "Página de assinaturas" },
             { src: "chatbot-3.png", label: "Página do chatbot" },
         ],
-        name: "ChatBot - Mentes em Flash",
+        name: "Chatbot - Mentes em Flash",
         description: "Chatbot de geração automática de flashcards, com planos de assinatura.",
         detailedDescription: `
             <p><b>Descrição:</b> Aplicação de chatbot desenvolvida para gerar flashcards personalizados, com sistema de assinatura mensal e anual integrado ao Stripe.</p>
@@ -29,6 +32,8 @@ const projects = [
         skills: ["PHP", "CodeIgniter", "MySQL", "Vue.js", "Quasar", "Stripe"],
         deployUrl: "http://chatbot.mentesemflash.com",
     },
+
+    // -------------------------- ERUPÇÃO DAS LETRAS --------------------------
     {
         image: "erupcao-das-letras.webp",
         imageDetails: [
@@ -45,9 +50,11 @@ const projects = [
             <p><b>Descrição:</b> Plataforma que conecta autores e leitores, permitindo publicar, vender e apoiar obras. Inclui feed de postagens, comentários, notificações, login com Google e integração com Stripe.</p>
             <p><b>Desafio:</b> Foi meu primeiro trabalho freelance, onde enfrentei desafios como integração de pagamentos e envio de e-mails, concluindo com sucesso.</p>
         `,
-        skills: ["PHP", "CodeIgniter", "jQuery", "MySQL"],
+        skills: ["PHP", "CodeIgniter", "jQuery", "Stripe", "MySQL"],
         deployUrl: "https://erupcaodasletras.com.br",
     },
+
+    // -------------------------- TASKFLOW ------------------------------------
     {
         image: "taskflow.webp",
         imageDetails: [
@@ -68,6 +75,8 @@ const projects = [
         deployUrl: "https://mytaskflow.vercel.app",
         codeUrl: "https://github.com/lezzin/tasks_manager",
     },
+
+    // -------------------------- FERRAMENTAS DEV -----------------------------
     {
         image: "ferramentas-dev.webp",
         imageDetails: [
@@ -87,6 +96,7 @@ const projects = [
         deployUrl: "https://mydevresources.vercel.app",
         codeUrl: "https://github.com/lezzin/dev_resources",
     },
+
     // {
     //     image: "blog.webp",
     //     imageDetails: [
