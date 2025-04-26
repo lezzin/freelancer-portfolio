@@ -1,5 +1,35 @@
 const projects = [
     {
+        image: "mentesemflash.webp",
+        imageDetails: [
+            { src: "mef-1.png", label: "Página inicial do projeto" },
+            { src: "mef-2.png", label: "Página de kits" },
+            { src: "mef-3.png", label: "Página do kit" },
+        ],
+        name: "Mentes em Flash",
+        description: "Plataforma para venda de flashcards de diversos temas.",
+        detailedDescription: `
+            <p><b>Descrição:</b> Plataforma própria para comercialização de flashcards, com integração direta à Hotmart para gestão de pagamentos e afiliados.</p>
+        `,
+        skills: ["PHP", "CodeIgniter", "Vue.js", "MySQL"],
+        deployUrl: "http://mentesemflash.com",
+    },
+    {
+        image: "chatbot.webp",
+        imageDetails: [
+            { src: "chatbot-1.png", label: "Página inicial do chatbot" },
+            { src: "chatbot-2.png", label: "Página de assinaturas" },
+            { src: "chatbot-3.png", label: "Página do chatbot" },
+        ],
+        name: "ChatBot - Mentes em Flash",
+        description: "Chatbot de geração automática de flashcards, com planos de assinatura.",
+        detailedDescription: `
+            <p><b>Descrição:</b> Aplicação de chatbot desenvolvida para gerar flashcards personalizados, com sistema de assinatura mensal e anual integrado ao Stripe.</p>
+        `,
+        skills: ["PHP", "CodeIgniter", "MySQL", "Vue.js", "Quasar", "Stripe"],
+        deployUrl: "http://chatbot.mentesemflash.com",
+    },
+    {
         image: "erupcao-das-letras.webp",
         imageDetails: [
             { src: "erupcao-6.png", label: "Painel do Lighthouse" },
