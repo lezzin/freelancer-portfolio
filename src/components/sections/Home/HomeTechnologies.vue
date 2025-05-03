@@ -1,8 +1,10 @@
 <script setup>
+import technologies from "../../../mock/technologies";
+
 import TechnologyList from "../../technology/TechnologyList.vue";
 import PageSection from "../../layout/PageSection.vue";
 import SectionHeader from "../../shared/SectionHeader.vue";
-import technologies from "../../../mock/technologies";
+import LazyImage from "../../shared/LazyImage.vue";
 
 const header = {
     title: 'Tecnologia moderna para <span class="text-gradient">projetos criativos</span>',

@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <AppCard class="relative max-w-2xl mx-auto" data-aos="fade-in">
+    <AppCard class="relative max-w-2xl mx-auto bg-opacity-60 backdrop-blur" data-aos="fade-in">
         <ol class="space-y-8 mx-auto">
             <StepListItem
                 v-for="(step, index) in steps"

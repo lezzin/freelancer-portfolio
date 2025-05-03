@@ -22,6 +22,6 @@ const logoSizes = {
 <template>
     <router-link to="/" :class="`${logoSizes[variant]} ring-1 ${coloring} aspect-square rounded-full`">
         <LazyImage url="logo.svg" alt="Logo do projeto" />
-        <span class="sr-only">Flashcards</span>
+        <span class="sr-only">Leandro Adrian da Silva</span>
     </router-link>
 </template>

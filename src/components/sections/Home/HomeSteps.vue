@@ -12,10 +12,12 @@ const header = {
 </script>
 
 <template>
-    <PageSection>
+    <PageSection class="relative">
+        <div class="absolute inset-0 bg-code-pattern bg-no-repeat rotate-180 opacity-30 bg-contain z-[-1] hidden md:block"></div>
+
         <div class="mx-auto mt-16 grid md:grid-cols-2 gap-8">
-            <div class="grid gap-8">
-                <SectionHeader section-align="left" :section-title="header.title" :section-description="header.description" />
+            <div class="grid gap-8 place-items-center">
+                <SectionHeader :section-title="header.title" :section-description="header.description" />
 
                 <div data-aos="fade-up-right" class="hidden md:block">
                     <LazyImage url="img/rocket.svg" width="300" height="300" />

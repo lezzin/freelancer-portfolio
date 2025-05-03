@@ -7,7 +7,8 @@ import HomeServices from "../components/sections/Home/HomeServices.vue";
 import HomeProjects from "../components/sections/Home/HomeProjects.vue";
 import HomeTechnologies from "../components/sections/Home/HomeTechnologies.vue";
 import HomeSteps from "../components/sections/Home/HomeSteps.vue";
-import HomeBanner from "../components/sections/Home/HomeBanner.vue";
+// import HomeTestimonials from "../components/sections/Home/HomeTestimonials.vue";
+// import HomeBanner from "../components/sections/Home/HomeBanner.vue";
 
 const route = useRoute();
 
@@ -29,4 +30,5 @@ onMounted(() => {
     <HomeTechnologies />
     <HomeSteps />
     <HomeProjects />
+    <!-- <HomeTestimonials /> -->
 </template>
