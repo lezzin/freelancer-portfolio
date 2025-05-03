@@ -4,7 +4,8 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                "square-pattern": "url('/img/square-pattern.svg')",
+                "square-pattern": "url('/img/pattern/square-pattern.svg')",
+                "code-pattern": "url('/img/pattern/code-pattern.svg')",
             },
         },
         plugins: [],

@@ -1,5 +1,11 @@
 export default [
     {
+        name: "Laravel",
+        description: "Ferramenta moderna para criar sistemas e sites completos com PHP.",
+        icon: `<i class="devicon-laravel-plain colored"></i>`,
+        category: "Backend",
+    },
+    {
         name: "CodeIgniter",
         description: "Framework PHP para criar aplicações web dinâmicas.",
         icon: `<i class="devicon-codeigniter-plain colored"></i>`,

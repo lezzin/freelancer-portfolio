@@ -1,4 +1,6 @@
 <script setup>
+import AppCard from "../shared/AppCard.vue";
+
 const props = defineProps({
     service: {
         type: Object,
@@ -8,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-white p-4 rounded-md group-hover h-full text-left border border-gray-200">
+    <AppCard class="group-hover h-full text-left">
         <div class="pl-16 relative">
             <h3 class="text-base/7 font-semibold text-gray-900 flex items-center">
                 <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-yellow-600 transition duration-300">
@@ -19,7 +21,7 @@ const props = defineProps({
             </h3>
             <p class="mt-2 text-base/7 text-gray-600">{{ service.description }}</p>
         </div>
-    </div>
+    </AppCard>
 </template>
 
 <style scoped>

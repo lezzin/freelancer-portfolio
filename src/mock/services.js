@@ -1,39 +1,29 @@
-import { CircleStackIcon, CloudIcon, CodeBracketIcon, FaceSmileIcon, LifebuoyIcon, MagnifyingGlassIcon } from "@heroicons/vue/16/solid";
+import { CircleStackIcon, CloudIcon, CodeBracketIcon, LifebuoyIcon } from "@heroicons/vue/16/solid";
 
 export default [
     {
         name: "Landing Pages",
-        description: "Páginas atraentes para divulgar produtos e captar clientes.",
+        description: "Criação de páginas modernas para apresentar seu produto ou serviço e atrair mais clientes.",
         icon: CodeBracketIcon,
     },
     {
-        name: "E-commerce",
-        description: "Desenvolvimento de lojas virtuais completas para vender seus produtos online.",
+        name: "Lojas Virtuais",
+        description: "Montagem de e-commerce completo para vender seus produtos pela internet com segurança.",
         icon: CloudIcon,
     },
     {
-        name: "Desenvolvimento Full-stack",
-        description: "Criação de sites e sistemas completos, do visual ao funcionamento interno.",
+        name: "Sites e Sistemas Completos",
+        description: "Desenvolvimento de projetos completos: desde o visual até tudo que acontece por trás do site.",
         icon: CloudIcon,
     },
     {
-        name: "Suporte Técnico",
-        description: "Ajuda para manter seu site funcionando sempre bem.",
-        icon: LifebuoyIcon,
-    },
-    {
-        name: "Sistemas Personalizados",
-        description: "Soluções feitas especialmente para as necessidades do seu negócio.",
+        name: "Sistemas Sob Medida",
+        description: "Criação de sistemas feitos especialmente para atender as necessidades específicas do seu negócio.",
         icon: CircleStackIcon,
     },
     {
-        name: "SEO",
-        description: "Otimização para que seu site apareça melhor nos buscadores.",
-        icon: MagnifyingGlassIcon,
-    },
-    {
-        name: "Acessibilidade",
-        description: "Crio sites fáceis de usar por qualquer pessoa.",
-        icon: FaceSmileIcon,
+        name: "Ajuda Técnica e Manutenção",
+        description: "Suporte contínuo para garantir que seu site funcione bem e esteja sempre atualizado.",
+        icon: LifebuoyIcon,
     },
 ];
