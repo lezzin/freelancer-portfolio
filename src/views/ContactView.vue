@@ -113,8 +113,6 @@ onMounted(() => {
 
 <template>
     <PageSection centered>
-        <div class="absolute inset-0 bg-code-pattern bg-no-repeat opacity-10 z-[-1]"></div>
-
         <SectionHeader :section-title="header.title" :section-description="header.description" />
 
         <form @submit.prevent="handleSubmit" class="mx-auto mt-8 max-w-xl sm:mt-20 w-full" data-aos="zoom-in">

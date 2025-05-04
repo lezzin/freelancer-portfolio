@@ -16,23 +16,6 @@ const projects = [
         deployUrl: "http://mentesemflash.com",
     },
 
-    // -------------------------- CHATBOT -------------------------------------
-    {
-        image: "chatbot.webp",
-        imageDetails: [
-            { src: "chatbot-1.png", label: "Página inicial do chatbot" },
-            { src: "chatbot-2.png", label: "Página de assinaturas" },
-            { src: "chatbot-3.png", label: "Página do chatbot" },
-        ],
-        name: "Chatbot - Mentes em Flash",
-        description: "Chatbot de geração automática de flashcards, com planos de assinatura.",
-        detailedDescription: `
-            <p><b>Descrição:</b> Aplicação de chatbot desenvolvida para gerar flashcards personalizados, com sistema de assinatura mensal e anual integrado ao Stripe.</p>
-        `,
-        skills: ["PHP", "CodeIgniter", "MySQL", "Vue.js", "Quasar", "Stripe"],
-        deployUrl: "http://chatbot.mentesemflash.com",
-    },
-
     // -------------------------- ERUPÇÃO DAS LETRAS --------------------------
     {
         image: "erupcao-das-letras.webp",
@@ -52,6 +35,23 @@ const projects = [
         `,
         skills: ["PHP", "CodeIgniter", "jQuery", "Stripe", "MySQL"],
         deployUrl: "https://erupcaodasletras.com.br",
+    },
+
+    // -------------------------- CHATBOT -------------------------------------
+    {
+        image: "chatbot.webp",
+        imageDetails: [
+            { src: "chatbot-1.png", label: "Página inicial do chatbot" },
+            { src: "chatbot-2.png", label: "Página de assinaturas" },
+            { src: "chatbot-3.png", label: "Página do chatbot" },
+        ],
+        name: "Chatbot - Mentes em Flash",
+        description: "Chatbot de geração automática de flashcards, com planos de assinatura.",
+        detailedDescription: `
+            <p><b>Descrição:</b> Aplicação de chatbot desenvolvida para gerar flashcards personalizados, com sistema de assinatura mensal e anual integrado ao Stripe.</p>
+        `,
+        skills: ["PHP", "CodeIgniter", "MySQL", "Vue.js", "Quasar", "Stripe"],
+        deployUrl: "http://chatbot.mentesemflash.com",
     },
 
     // -------------------------- TASKFLOW ------------------------------------

@@ -7,7 +7,7 @@ const props = defineProps(["url"]);
 const successUrl = ref(props.url);
 
 const lazyRef = useLazyload(successUrl, {
-    error: "/img/image-load-error.webp",
+    error: "/img/image-error.png",
     loading: "",
     lifecycle: {
         loading: (el) => {

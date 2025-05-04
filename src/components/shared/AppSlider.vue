@@ -65,3 +65,9 @@ const attrs = useAttrs();
         </button>
     </div>
 </template>
+
+<style lang="postcss">
+.slider-button {
+    @apply w-10 aspect-square border border-yellow-600 text-yellow-600 bg-yellow-100 hover:bg-yellow-200 rounded-full grid place-items-center;
+}
+</style>

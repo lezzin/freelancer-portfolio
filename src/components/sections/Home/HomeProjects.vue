@@ -1,8 +1,9 @@
 <script setup>
 import SectionHeader from "../../shared/SectionHeader.vue";
 import PageSection from "../../layout/PageSection.vue";
-import projects from "../../../mock/projects";
 import ProjectList from "../../project/ProjectList.vue";
+
+import projects from "../../../mock/projects";
 
 const header = {
     title: "Projetos Realizados",

@@ -17,7 +17,7 @@ const categoryColors = {
 </script>
 
 <template>
-    <AppCard>
+    <AppCard class="h-full">
         <div class="pl-16 relative">
             <div class="absolute left-0 top-0 w-16 h-16 rounded-lg flex items-center justify-center mr-4 shadow-sm bg-gray-100">
                 <span v-html="technology.icon" class="text-4xl"></span>
