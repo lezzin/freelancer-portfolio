@@ -19,8 +19,8 @@ const header = {
             <div class="grid gap-8 place-items-center">
                 <SectionHeader :section-title="header.title" :section-description="header.description" />
 
-                <div data-aos="fade-up-right" class="hidden md:block">
-                    <LazyImage url="img/rocket.svg" width="300" height="300" />
+                <div data-aos="fade-up-right" class="relative hidden md:block">
+                    <LazyImage url="img/rocket.svg" width="300" height="300" class="rocket-image" />
                 </div>
             </div>
 
@@ -28,3 +28,19 @@ const header = {
         </div>
     </PageSection>
 </template>
+
+<style scoped>
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(15px) rotate(3deg);
+    }
+}
+
+.rocket-image {
+    animation: float 3s ease-in-out infinite;
+}
+</style>
