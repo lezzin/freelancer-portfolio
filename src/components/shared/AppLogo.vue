@@ -5,8 +5,8 @@ import LazyImage from "./LazyImage.vue";
 type LogoVariants = "small" | "normal";
 
 interface AppLogoProps {
-  variant: LogoVariants;
-  coloring: string;
+  variant?: LogoVariants;
+  coloring?: string;
 }
 
 withDefaults(defineProps<AppLogoProps>(), {

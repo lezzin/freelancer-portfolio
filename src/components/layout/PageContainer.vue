@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface PageContainerProps {
-  centered: boolean;
-  fluid: boolean;
+  centered?: boolean;
+  fluid?: boolean;
 }
 
 const props = withDefaults(defineProps<PageContainerProps>(), {

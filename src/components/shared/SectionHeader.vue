@@ -2,9 +2,9 @@
 type SectionAlignments = "center" | "left" | "right";
 
 interface SectionHeaderProps {
-  sectionTitle: string;
-  sectionDescription: string;
-  sectionAlign: SectionAlignments;
+  sectionTitle?: string;
+  sectionDescription?: string;
+  sectionAlign?: SectionAlignments;
 }
 
 const props = withDefaults(defineProps<SectionHeaderProps>(), {

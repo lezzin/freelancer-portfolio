@@ -3,7 +3,7 @@ import type { Step } from "@/interfaces/Step";
 
 interface StepListItemProps {
   step: Step;
-  hasLine: boolean;
+  hasLine?: boolean;
 }
 
 withDefaults(defineProps<StepListItemProps>(), { hasLine: true });

@@ -10,5 +10,6 @@ export interface Project {
   description: string;
   detailedDescription: string;
   skills: string[];
-  deployUrl: string;
+  deployUrl?: string;
+  codeUrl?: string;
 }
