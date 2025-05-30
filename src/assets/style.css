@@ -10,7 +10,7 @@ html {
 
 @layer utilities {
     .section-title {
-        @apply text-pretty font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl lg:text-balance;
+        @apply text-pretty font-bold tracking-tight text-green-800 text-4xl lg:text-5xl lg:text-balance;
     }
 
     .section-subtitle {

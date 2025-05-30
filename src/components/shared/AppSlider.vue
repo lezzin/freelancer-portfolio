@@ -23,7 +23,7 @@ const config = {
     autoplay: 2000,
     gap: 5,
     breakpointMode: "viewport",
-    snapAlign: "start",
+    snapAlign: "center",
     wrapAround: true,
     breakpoints: {
         300: {
@@ -45,9 +45,12 @@ const attrs = useAttrs();
 </script>
 
 <template>
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" class="relative">
+        <div class="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
         <Carousel v-bind="config" ref="carouselRef" v-model="currentSlide">
-            <Slide v-for="(item, index) in items" :key="`slide-${index}-${itemProp}`">
+            <Slide v-for="(item, index) in items" :key="`slide-${index}-${itemProp}`" class="cursor-grab select-none">
                 <component :is="component" v-bind="attrs" :[itemProp]="item" />
             </Slide>
         </Carousel>
