@@ -1,15 +1,20 @@
-<script setup>
-import AppSlider from "../shared/AppSlider.vue";
-import TechnologyListItem from "./TechnologyListItem.vue";
+<script setup lang="ts">
+import type { Technology } from "@/interfaces/Technology";
 
-const props = defineProps({
-    technologies: {
-        type: Array,
-        required: true,
-    },
-});
+import TechnologyListItem from "./TechnologyListItem.vue";
+import AppSlider from "../shared/AppSlider.vue";
+
+interface TechnologyListProps {
+  technologies: Technology[];
+}
+
+defineProps<TechnologyListProps>();
 </script>
 
 <template>
-    <AppSlider :items="technologies" :component="TechnologyListItem" item-prop="technology" />
+  <AppSlider
+    :items="technologies"
+    :component="TechnologyListItem"
+    item-prop="technology"
+  />
 </template>

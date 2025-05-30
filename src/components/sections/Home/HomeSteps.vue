@@ -1,12 +1,13 @@
-<script setup>
+<script setup lang="ts">
 import PageSection from "../../layout/PageSection.vue";
 import SectionHeader from "../../shared/SectionHeader.vue";
 import StepItem from "../../step/StepItem.vue";
 import steps from "../../../mock/steps.js";
 import LazyImage from "../../shared/LazyImage.vue";
+import type { HeaderTitle } from "@/interfaces/HeaderTitle.js";
 import PageBackground from "../../layout/PageBackground.vue";
 
-const header = {
+const header: HeaderTitle = {
     title: "Criação de Websites Passo a Passo",
     description: "Sigo um processo claro e organizado para entregar soluções que funcionam. ",
 };
@@ -14,6 +15,8 @@ const header = {
 
 <template>
     <PageSection class="relative">
+        <div class="absolute inset-0 bg-code-pattern bg-no-repeat rotate-180 opacity-30 bg-contain z-[-1] hidden md:block"></div>
+
         <div class="mx-auto mt-16 grid md:grid-cols-2 gap-8">
             <div class="grid gap-8 place-items-center">
                 <SectionHeader :section-title="header.title" :section-description="header.description" />

@@ -1,29 +1,22 @@
-<script setup>
+<script setup lang="ts">
 import { ref, useAttrs } from "vue";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/24/solid";
-import { Slide, Carousel } from "vue3-carousel";
+import { Slide, Carousel, type CarouselConfig } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 
-const props = defineProps({
-    items: {
-        type: Array,
-        required: true,
-    },
-    component: {
-        type: [Object, Function],
-        required: true,
-    },
-    itemProp: {
-        type: String,
-        required: true,
-    },
-});
+interface AppSliderProps {
+    items: Array<any>;
+    component: Object | Function;
+    itemProp: string;
+}
+
+defineProps<AppSliderProps>();
 
 const config = {
     autoplay: 2000,
     gap: 5,
     breakpointMode: "viewport",
-    snapAlign: "center",
+    snapAlign: "start",
     wrapAround: true,
     breakpoints: {
         300: {
