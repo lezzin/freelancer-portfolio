@@ -16,7 +16,7 @@ const config = {
     autoplay: 2000,
     gap: 5,
     breakpointMode: "viewport",
-    snapAlign: "start",
+    snapAlign: "center",
     wrapAround: true,
     breakpoints: {
         300: {
