@@ -9,11 +9,11 @@ export const Projects = () => {
     {
       title: "Mentes em Flash",
       category: "Sistema Web",
-      image: "src/assets/projects/01/01.webp",
+      image: "/projects/01/01.webp",
       gallery: [
-        "src/assets/projects/01/02.png",
-        "src/assets/projects/01/03.png",
-        "src/assets/projects/01/04.png",
+        "/projects/01/02.png",
+        "/projects/01/03.png",
+        "/projects/01/04.png",
       ],
       description:
         "Plataforma própria para comercialização de flashcards, com integração direta à Hotmart para gestão de pagamentos e afiliados.",
@@ -23,11 +23,11 @@ export const Projects = () => {
     {
       title: "Erupção das Letras",
       category: "Sistema Web",
-      image: "src/assets/projects/02/01.webp",
+      image: "/projects/02/01.webp",
       gallery: [
-        "src/assets/projects/02/02.png",
-        "src/assets/projects/02/03.png",
-        "src/assets/projects/02/04.png",
+        "/projects/02/02.png",
+        "/projects/02/03.png",
+        "/projects/02/04.png",
       ],
       description:
         "Rede social para autores e leitores, com foco em publicação e apoio financeiro de obras.",
@@ -37,11 +37,11 @@ export const Projects = () => {
     {
       title: "TaskFlow",
       category: "Sistema Web",
-      image: "src/assets/projects/03/01.webp",
+      image: "/projects/03/01.webp",
       gallery: [
-        "src/assets/projects/03/02.png",
-        "src/assets/projects/03/03.png",
-        "src/assets/projects/03/04.png",
+        "/projects/03/02.png",
+        "/projects/03/03.png",
+        "/projects/03/04.png",
       ],
       description:
         "Rede social para autores e leitores, com foco em publicação e apoio financeiro de obras.",

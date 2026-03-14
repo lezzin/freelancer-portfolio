@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export const Feedbacks = () => {
   const feedbacks = [
     {
-      image: 'src/assets/feedbacks/mauricio.jpg',
+      image: '/feedbacks/mauricio.jpg',
       name: "Mauricio G.",
       role: "Fundador, Erupção das Letras",
       text: "O Leandro é solícito e confiável. Tem boa capacidade de pesquisar tanto quanto criar suas próprias soluções.",

@@ -1,6 +1,5 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
-import image from '../assets/profile.jpg'
 
 export const About = () => {
   return (
@@ -18,7 +17,7 @@ export const About = () => {
         >
           <div className="absolute w-75 h-75 md:w-112.5 md:h-112.5 bg-green-900/50 rounded-full -z-10 blur-3xl"></div>
           <img
-            src={image}
+            src="/profile.jpg"
             alt="Leandro Adrian"
             className="relative z-10 w-75 h-75 md:w-112.5 md:h-112.5 object-cover rounded-full border-4 border-green-vibrant/30"
             referrerPolicy="no-referrer"
