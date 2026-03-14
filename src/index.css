@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-signature: "Caveat", cursive;
+
+  --color-green-900: #064e3b;
+  --color-green-vibrant: #10b981;
+  --color-green-soft: #6ee7b7;
+  --color-bg-main: #0a0a0a;
+  --color-bg-card: #171717;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: white;
+  overflow-x: hidden;
+}
+
+.dashed-box {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border: 1px dashed #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.dashed-box::before,
+.dashed-box::after,
+.dashed-box .corner-bl,
+.dashed-box .corner-br {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-green-vibrant);
+}
+
+.dashed-box::before {
+  top: -3px;
+  left: -3px;
+}
+
+.dashed-box::after {
+  top: -3px;
+  right: -3px;
+}
+
+.dashed-box .corner-bl {
+  bottom: -3px;
+  left: -3px;
+  position: absolute;
+}
+
+.dashed-box .corner-br {
+  bottom: -3px;
+  right: -3px;
+  position: absolute;
+}
