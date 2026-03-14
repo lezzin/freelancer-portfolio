@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "motion-v";
 import { ArrowRight, ExternalLink, Github, X } from "lucide-vue-next";
 import { ref, watchEffect } from "vue";
-import projects, { Project } from "../data/projects";
+import projects, { type Project } from "../data/projects";
 
 const selectedProject = ref<Project | null>(null)
 
