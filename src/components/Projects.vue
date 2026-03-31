@@ -85,7 +85,7 @@ watchEffect(() => {
       :initial="{ opacity: 0 }" :animate="{ opacity: 1 }" :exit="{ opacity: 0 }" @click="selectedProject = null">
       <motion.div @click.stop :initial="{ opacity: 0, y: 40, scale: 0.95 }" :animate="{ opacity: 1, y: 0, scale: 1 }"
         :exit="{ opacity: 0, y: 20, scale: 0.98 }" :transition="{ duration: 0.3 }"
-        class="relative w-full max-w-6xl max-h-[92vh] overflow-hidden rounded-3xl border border-white/10 bg-black/75">
+        class="relative w-full max-w-6xl max-h-[92vh] overflow-hidden rounded-3xl border border-white/10 bg-black/80">
         <button @click="selectedProject = null"
           class="absolute top-4 right-4 z-20 h-10 w-10 flex items-center justify-center rounded-full bg-black/60 border border-white/10 hover:bg-black/80 transition cursor-pointer">
           <X :size="18" />
@@ -126,7 +126,7 @@ watchEffect(() => {
               {{ selectedProject.description }}
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-3">
+            <div class="flex flex-col sm:flex-row gap-3 mt-auto">
               <a v-if="selectedProject.github" :href="selectedProject.github" target="_blank"
                 class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm hover:bg-white/10 transition">
                 <Github :size="17" />
